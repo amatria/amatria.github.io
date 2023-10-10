@@ -1,0 +1,75 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, rgba(245, 220, 224, 1) 9%, rgba(236, 189, 196, 1) 64%, rgba(228, 160, 183, 1) 98%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.card {
+  margin: 1rem;
+  margin-top: 5rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 13px 15px 60px -12px rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 600px) {
+  .card {
+    padding: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .card {
+    padding: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    padding: 2.5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+
+.play {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(228, 160, 183, 0.9);
+}
+
+.play:hover {
+  background-color: rgba(228, 160, 183, 1);
+}
+
+p {
+  font-family: inherit;
+  line-height: 1.75rem;
+  min-height: 9rem;
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+}
