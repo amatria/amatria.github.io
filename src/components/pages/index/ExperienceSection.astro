@@ -1,0 +1,25 @@
+---
+import { cv } from "@data/cv.ts";
+---
+
+<section class="py-16 border-t border-gray-100">
+  <p class="section-label">Experience</p>
+  <div>
+    {
+      cv.experience.map(({ date, role, org, bullets }) => (
+        <div class="timeline-grid">
+          <span class="timeline-date">{date}</span>
+          <div>
+            <p class="text-sm font-medium text-zinc-900 mb-0.5">{role}</p>
+            <p class="text-xs text-purple-600 mb-3">{org}</p>
+            <ul class="flex flex-col gap-1.5">
+              {bullets.map((bullet) => (
+                <li class="timeline-bullet">{bullet}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

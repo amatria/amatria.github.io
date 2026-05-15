@@ -1,0 +1,23 @@
+---
+import { cv } from "@data/cv.ts";
+---
+
+<section class="py-16 border-t border-gray-100">
+  <p class="section-label">Education & Training</p>
+  <div>
+    {
+      cv.education.map(({ date, degree, school, note }) => (
+        <div class="timeline-grid">
+          <span class="timeline-date">{date}</span>
+          <div>
+            <p class="text-sm font-medium text-zinc-900 mb-0.5">{degree}</p>
+            <p class="text-xs text-purple-600 mb-1">{school}</p>
+            <p class="text-xs text-gray-400 font-light leading-relaxed">
+              {note}
+            </p>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

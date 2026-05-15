@@ -1,0 +1,48 @@
+---
+import { cv } from "@data/cv.ts";
+---
+
+<section class="py-16 border-t border-gray-100">
+  <p class="section-label">Open Source</p>
+  <div>
+    {
+      cv.openSource.map(({ date, name, role, url, urlLabel, bullets }) => (
+        <div class="timeline-grid">
+          <span class="timeline-date">{date}</span>
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <p class="text-sm font-medium text-zinc-900">{name}</p>
+              <span class="text-xs font-medium tracking-wide uppercase text-purple-600 bg-purple-50 border border-purple-100 px-2 py-0.5 rounded-full">
+                {role}
+              </span>
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener"
+                class="text-xs text-gray-400 hover:text-purple-600 transition-colors duration-200 inline-flex items-center gap-1"
+              >
+                <svg
+                  class="w-2.5 h-2.5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                {urlLabel}
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              {bullets.map((bullet) => (
+                <li class="timeline-bullet">{bullet}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
