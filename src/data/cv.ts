@@ -1,7 +1,7 @@
 export const cv = {
   name: 'Iñaki Amatria Barral',
   title:
-      'Software engineer with a focus on compilers, LLVM, and high-performance computing. I enjoy hard problems.',
+      'Software engineer with a focus on compilers, LLVM, and HPC. I enjoy hard problems.',
   website: 'amatria.dev',
   linkedin: {
     label: 'inaki-amatria-barral',
@@ -13,7 +13,7 @@ export const cv = {
   ],
 
   about:
-      'Software engineer with a focus on compilers, LLVM, and high-performance computing. I work mostly in modern C++ — extending frontends, writing analysis passes, and optimizing code at a low level. I have contributed to projects like Clang, Flang, and tree-sitter, and I enjoy the kind of problems where performance actually matters.',
+      'Software engineer with a focus on compilers, LLVM, and HPC. I work mostly in modern C++ — extending frontends, writing analysis passes, and optimizing code at a low level. I have contributed to projects like Clang, Flang, and tree-sitter, and I enjoy the kind of problems where performance actually matters — from HPC tooling used at national research labs to genome-scale bioinformatics.',
 
   experience: [
     {
@@ -21,9 +21,9 @@ export const cv = {
       role: 'Compiler Engineer',
       org: 'Codee',
       bullets: [
-        'Developed LLVM IR analysis and transformation passes for performance diagnostics and optimization.',
-        'Extended Clang and Flang frontends — AST handling and semantic analysis.',
-        'Contributed upstream to LLVM ecosystem projects (LLVM, tree-sitter, Bear).',
+        'Developed LLVM IR analysis and transformation passes for performance diagnostics and auto-remediation, enabling adoption by national research labs including Argonne, Oak Ridge, and NERSC.',
+        'Extended Clang and Flang frontends for AST analysis and semantic diagnostics on real-world HPC codebases (Fortran, C, and C++).',
+        'Upstreamed fixes and improvements to LLVM, Bear, and tree-sitter-fortran as part of the core product workflow.',
       ],
     },
     {
@@ -31,9 +31,9 @@ export const cv = {
       role: 'Research Assistant',
       org: 'Universidade da Coruña',
       bullets: [
-        'Applied high-performance computing techniques to bioinformatics workloads.',
-        'Optimized computational kernels for performance and scalability.',
-        'Authored several publications in JCR D1 journals.',
+        'Achieved 200x speedup on lncRNA-DNA interaction prediction, enabling transcriptome-scale analysis of the human genome in under one hour (Bioinformatics, D1).',
+        'Reduced a 3-month computation to under 20 hours on a modest cluster via a key memory optimization in the parallelization of RIblast (Future Generation Computer Systems, D1; Methods in Molecular Biology, D1).',
+        'All work released as open source; tools actively maintained and used by researchers worldwide.',
       ],
     },
     {
@@ -41,7 +41,7 @@ export const cv = {
       role: 'Research Support Assistant',
       org: 'Universidade da Coruña',
       bullets: [
-        'Conducted research in bioinformatics and high-performance computing.',
+        'Conducted research in bioinformatics and HPC.',
         'Implemented and evaluated algorithms for scientific workloads.',
       ],
     },
@@ -87,7 +87,7 @@ export const cv = {
       urlLabel: 'llvm-project',
       bullets: [
         'Implemented and reviewed patches in the Flang frontend — semantic analysis, module handling, and diagnostics.',
-        'Reported and fixed frontend crashes and semantic issues in real-world Fortran code.',
+        'Fixed non-deterministic behavior in Fortran module generation and aligned driver behavior with gfortran via the -x flag.',
         '5+ merged patches and 10+ resolved issues in Clang and Flang.',
       ],
     },
@@ -98,7 +98,7 @@ export const cv = {
       url: 'https://github.com/UDC-GAC/PATO',
       urlLabel: 'PATO',
       bullets: [
-        'High-performance tool for detecting triplex helices in nucleotide sequences.',
+        'Genome-wide tool for lncRNA-DNA triplex helix detection — published in Bioinformatics (D1) with a demonstrated 200x speedup.',
       ],
     },
   ],
