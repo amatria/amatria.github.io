@@ -13,7 +13,15 @@ export const cv = {
   ],
 
   about:
-      'Software engineer with a focus on compilers, LLVM, and HPC. I work mostly in modern C++ — extending frontends, writing analysis passes, and optimizing code at a low level. I have contributed to projects like Clang, Flang, and tree-sitter, and I enjoy the kind of problems where performance actually matters — from HPC tooling used at national research labs to genome-scale bioinformatics.',
+      'Software engineer with a focus on compilers, LLVM, and HPC. I work mostly in modern C++, extending frontends, writing analysis passes, and optimizing code at a low level. I have contributed to projects like Clang, Flang, and tree-sitter, and I enjoy the kind of problems where performance actually matters, from HPC tooling used at national research labs to genome-scale bioinformatics.',
+
+  skills: [
+    {label: 'Languages', items: ['C++', 'C', 'Fortran', 'Python', 'Lua']},
+    {
+      label: 'Compiler stack',
+      items: ['LLVM', 'Clang', 'Flang', 'Bear', 'tree-sitter']
+    },
+  ],
 
   experience: [
     {
@@ -22,8 +30,8 @@ export const cv = {
       org: 'Codee',
       bullets: [
         'Developed LLVM IR analysis and transformation passes for performance diagnostics and auto-remediation, enabling adoption by national research labs including Argonne, Oak Ridge, and NERSC.',
-        'Extended Clang and Flang frontends for AST analysis and semantic diagnostics on real-world HPC codebases (Fortran, C, and C++).',
-        'Upstreamed fixes and improvements to LLVM, Bear, and tree-sitter-fortran as part of the core product workflow.',
+        'Extended Clang and Flang frontends for AST analysis and semantic diagnostics on real-world HPC codebases (Fortran, C, and C++), including targeted MLIR modifications to support compiler extensions.',
+        'Actively contributed upstream to LLVM, Bear, and tree-sitter-fortran; patches merged into production and issues reported and resolved across the broader compiler community.',
       ],
     },
     {
@@ -33,6 +41,7 @@ export const cv = {
       bullets: [
         'Achieved 200x speedup on lncRNA-DNA interaction prediction, enabling transcriptome-scale analysis of the human genome in under one hour (Bioinformatics, D1).',
         'Reduced a 3-month computation to under 20 hours on a modest cluster via a key memory optimization in the parallelization of RIblast (Future Generation Computer Systems, D1; Methods in Molecular Biology, D1).',
+        'Developed data processing pipelines and statistical analysis workflows in Python to validate experimental results across large genomic datasets.',
         'All work released as open source; tools actively maintained and used by researchers worldwide.',
       ],
     },
@@ -86,9 +95,9 @@ export const cv = {
       url: 'https://github.com/llvm/llvm-project',
       urlLabel: 'llvm-project',
       bullets: [
-        'Implemented and reviewed patches in the Flang frontend — semantic analysis, module handling, and diagnostics.',
+        'Implemented and reviewed patches in the Flang frontend, including semantic analysis, module handling, and diagnostics.',
         'Fixed non-deterministic behavior in Fortran module generation and aligned driver behavior with gfortran via the -x flag.',
-        '5+ merged patches and 10+ resolved issues in Clang and Flang.',
+        '5+ merged patches and 10+ resolved issues.',
       ],
     },
     {
@@ -98,7 +107,7 @@ export const cv = {
       url: 'https://github.com/UDC-GAC/PATO',
       urlLabel: 'PATO',
       bullets: [
-        'Genome-wide tool for lncRNA-DNA triplex helix detection — published in Bioinformatics (D1) with a demonstrated 200x speedup.',
+        'Genome-wide tool for lncRNA-DNA triplex helix detection published in Bioinformatics (D1) with a demonstrated 200x speedup.',
       ],
     },
   ],
