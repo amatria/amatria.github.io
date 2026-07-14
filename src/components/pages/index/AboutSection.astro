@@ -7,4 +7,14 @@ import { cv } from "@data/cv.ts";
   <p class="text-sm text-gray-500 font-light leading-relaxed max-w-prose">
     {cv.about}
   </p>
+  <ul class="mt-4 space-y-1">
+    {
+      cv.skills.map(({ label, items }) => (
+        <li class="text-sm text-gray-500 font-light">
+          <span class="font-medium text-zinc-900">{label}:</span>{" "}
+          {items.join(", ")}.
+        </li>
+      ))
+    }
+  </ul>
 </section>
