@@ -25,7 +25,15 @@ export const cv = {
 
   experience: [
     {
-      date: '2023 — now',
+      date: '2026 — now',
+      role: 'Compiler Engineer',
+      org: 'Riverlane',
+      bullets: [
+        'Working on compiler infrastructure for quantum error correction using MLIR.',
+      ],
+    },
+    {
+      date: '2023 — 2026',
       role: 'Compiler Engineer',
       org: 'Codee',
       bullets: [
