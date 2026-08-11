@@ -19,7 +19,7 @@ export const cv = {
     {label: 'Languages', items: ['C++', 'C', 'Fortran', 'Python', 'Lua']},
     {
       label: 'Compiler stack',
-      items: ['LLVM', 'Clang', 'Flang', 'Bear', 'tree-sitter']
+      items: ['LLVM', 'MLIR', 'Clang', 'Flang', 'Bear', 'tree-sitter']
     },
   ],
 
